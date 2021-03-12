@@ -1,0 +1,31 @@
+{
+  "name": "@newredo/db-config-json",
+  "version": "1.0.0",
+  "private": true,
+  "repository": "github:NewRedo/db-config-json",
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "npx tsc",
+    "build:clean": "rm -rf ./dist && npm run build",
+    "lint": "npx eslint src"
+  },
+  "engines": {
+    "node": ">=14.15.0"
+  },
+  "dependencies": {
+    "mysql2": "^2.2.5"
+  },
+  "devDependencies": {
+    "@tsconfig/node14": "^1.0.0",
+    "@types/node": "^14.14.25",
+    "@typescript-eslint/eslint-plugin": "^4.14.2",
+    "@typescript-eslint/parser": "^4.14.2",
+    "eslint": "^7.19.0",
+    "eslint-plugin-node": "^11.1.0",
+    "typescript": "^4.1.3"
+  }
+}
